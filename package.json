@@ -1,18 +1,17 @@
 {
-  "name": "@freshsqueezed/zen-toolkit",
+  "name": "@zenagent/toolkit",
   "version": "0.0.0",
   "type": "module",
-  "source": "./lib/main.ts",
-  "main": "./dist/main.js",
-  "module": "./dist/main.js",
-  "typings": "./dist/main.d.ts",
+  "source": "./lib/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "prepack": "npm run build",
-    "build": "tsc --p ./tsconfig-build.json && vite build",
-    "prepare": "husky"
+    "build": "tsc --p ."
   },
   "keywords": [],
   "author": "",
@@ -21,14 +20,10 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.15.18",
-    "@types/react": "^19.1.4",
-    "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.4.1",
     "semantic-release": "^24.2.3",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vite-plugin-dts": "^4.5.3"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "react": "^19.1.0",
